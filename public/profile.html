@@ -23,14 +23,23 @@
 <body>
     
     <div class="container">
+        <h1 class="new-one">Make a New Post Here</h1>
         <div class="row">
           <div class="col-sm">
-            One of three columns
-
+           one of three
           </div>
 
           <div class="col-sm">
-            One of three columns
+            <form>
+                <div class="form-group">
+                  <label for="title-entry">Entry Title</label>
+                  <input type="text" class="form-control" id="entry-title" placeholder="Title...">
+                </div>
+                <div class="form-group">
+                    <label for="text-area">Write About Your Plants!</label>
+                    <textarea class="form-control" id="text1" rows="3"></textarea>
+                  </div>
+                </form>
           </div>
 
           <div class="col-sm">
@@ -38,7 +47,7 @@
 
             <div class="form-container">
                 <form class="form">
-                    <input id="search" type="text" class="input" placeholder="search..."/>
+                    <input id="search" type="text" class="input" placeholder="look up a plant..."/>
                     <button id="search" class="search-results">Search</button>
                 </form>  
 
