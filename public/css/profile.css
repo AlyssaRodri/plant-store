@@ -7,10 +7,17 @@ body{
     background-position: center;
 }
 
+.new-one{
+    background-color: palegreen;
+    background-color: rgba(6, 6, 6, 0.382);
+    color: white;
+
+}
 .jumbotron, .container, .display-4, .lead{
     /* background-color: #FEFEE3!important; */
     background-color: transparent;
     background-blend-mode: soft-light;
+    text-align: center;
 }
 
 header{
@@ -18,14 +25,52 @@ header{
     text-align: center;
 }
 
-.form-container{
+.col-sm{
     background-color: palegreen;
+    /* opacity: 50%;  */
+    background-color: rgba(143, 236, 115, 0.501);
+    color: white;
+
+}
+
+.form-container{
+    /* background-color: palegreen;
     background-blend-mode:color-dodge;
-    /* background */
-    opacity: 100%;
+    /* background
+    opacity: 100%; */
 }
-/* .blogSpace, .blogContainer{
-    /* display: flex;
-    flex-direction: row;
+
+.new-post{
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    text-align: center;
 }
- */
+
+/* .col-sm {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-sm::before {    
+      content: "";
+      background-image: url('https://placekitten.com/1200/800');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
+}
+
+h1 {
+  position: relative;
+  color: #ffffff;  
+  font-size: 14rem;
+  line-height: 0.9;
+  text-align: center;
+} */
