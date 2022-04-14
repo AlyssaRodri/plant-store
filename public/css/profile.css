@@ -1,0 +1,19 @@
+
+body{
+    /* background-color: #2C6E49; */
+    background-image: url(../images/profile-bg2.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center;
+}
+
+.jumbotron, .container, .display-4, .lead{
+    /* background-color: #FEFEE3!important; */
+    background-color: transparent;
+    background-blend-mode: soft-light;
+}
+
+header{
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
