@@ -16,7 +16,7 @@
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.0.4",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-handlebars": "^5.3.5",
     "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
@@ -26,5 +26,13 @@
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
     "prettier": "^2.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlyssaRodri/plant-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlyssaRodri/plant-store/issues"
+  },
+  "homepage": "https://github.com/AlyssaRodri/plant-store#readme"
 }
