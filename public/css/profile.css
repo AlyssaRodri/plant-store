@@ -17,3 +17,15 @@ header{
     font-family: 'Courgette', cursive;
     text-align: center;
 }
+
+.form-container{
+    background-color: palegreen;
+    background-blend-mode:color-dodge;
+    /* background */
+    opacity: 100%;
+}
+/* .blogSpace, .blogContainer{
+    /* display: flex;
+    flex-direction: row;
+}
+ */
