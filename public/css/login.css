@@ -1,0 +1,76 @@
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  background-color: #4c956c;
+  color: #fefee3
+}
+
+.btn-primary {
+  border-radius: 30px;
+  border: none;
+  background-color: #4c956c;
+}
+.btn-primary:hover {
+  border-radius: 30px;
+  border: none;
+  background-color: #4c956c;
+  outline: 1px solid black;
+}
+
+.formLogin {
+  width: auto;
+}
+
+.card {
+  width: 16vw;
+  height: 80%;
+  background-color: #4c956c;
+}
+
+.card-header {
+  background-color: #183d28;
+}
+.card-body {
+  background-color: #2c6e49;
+}
+.card-footer {
+  background-color: #183d28;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.form-group label{
+  flex-basis: 100%;
+}
+
+.form-input {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: #2c6e49;
+  color: #fefee3;
+}
+.form-input:focus {
+  outline: none;
+}
+
+.switchCardBtn {
+  color: #fefee3;
+  text-decoration: underline;
+}
+.switchCardBtn:hover {
+  color: #fefee3;
+  text-decoration: none;
+}
+
+.hide{
+  display: none;
+}
