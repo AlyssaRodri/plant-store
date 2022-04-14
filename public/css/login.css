@@ -1,12 +1,9 @@
 .main-container {
-  width: 100vw;
-  height: 100vh;
   padding: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  background-color: #4c956c;
   color: #fefee3
 }
 
@@ -27,8 +24,8 @@
 }
 
 .card {
-  width: 16vw;
-  height: 80%;
+  width: 20rem;
+  height: 50vh;
   background-color: #4c956c;
 }
 
@@ -74,3 +71,9 @@
 .hide{
   display: none;
 }
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 75vw;
+  }
+}  
