@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { Blog, User } = require('../models');
 const withAuth = require('../utils/auth');
+const APIKey = d73FVCNOjWllbGe9d4v28J7AHeEHprPO6w9Iq6ZxzCM
+
 
 router.get('/', async (req, res) => {
   try {
