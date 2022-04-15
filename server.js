@@ -4,7 +4,7 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
-// const multer = require('multer')
+// const multer = require('multer');
 // const upload = multer();
 
 const sequelize = require('./config/connection');
