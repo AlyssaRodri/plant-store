@@ -10,20 +10,20 @@ User.hasMany(comments, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
 });
-User.hasMany(Image, {
-  foreignKey: 'user_id',
-  onDelete: 'CASCADE'
-});
+// User.hasMany(Image, {
+//   foreignKey: 'user_id',
+//   onDelete: 'CASCADE'
+// });
 Blog.belongsTo(User, {
   foreignKey: 'user_id'
 });
 comments.belongsTo(User, {
   foreignKey: 'user_id'
 });
-Image.belongsTo(User, {
-  foreignKey: 'user_id',
-});
+// Image.belongsTo(User, {
+//   foreignKey: 'user_id',
+// });
 
 
 
-module.exports = { User, Blog, comments, Image };
+module.exports = { User, Blog, comments };
