@@ -4,7 +4,7 @@ const withAuth = require('../utils/auth');
 // const APIKey = d73FVCNOjWllbGe9d4v28J7AHeEHprPO6w9Iq6ZxzCM
 
 
-router.get('/', async (req, res) => {
+router.get('/login', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
     const blogData = await Blog.findAll({
@@ -71,7 +71,7 @@ router.get('/profile', withAuth, async (req, res) => {
   }
 });
 
-router.get('/login', (req, res) => {
+router.get('/', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
     res.redirect('/profile');
