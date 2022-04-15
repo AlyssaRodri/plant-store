@@ -4,7 +4,7 @@ const withAuth = require('../utils/auth');
 // const APIKey = d73FVCNOjWllbGe9d4v28J7AHeEHprPO6w9Iq6ZxzCM
 
 
-router.get('/login', async (req, res) => {
+router.get('/dashboard', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
     const blogData = await Blog.findAll({
