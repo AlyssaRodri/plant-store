@@ -1,19 +1,23 @@
-{{!-- When you log in you should be able to see whatever you have saved. We need a clickable area to see the previous blogposts. --}}
+{{!-- When you log in you should be able to see whatever you have saved. We need a clickable area to see the previous
+blogposts. --}}
 
 
 <!-- Loop over each object in the blogs array -->
 {{#each blogs as |blog| }}
-<div class="row mb-4 blog">
-  <div class="col-md-5">
-    <h2>
-
-      <a href="/blog/{{blog.id}}">{{blog.name}}</a>
-    </h2>
-    <p>Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
-  </div>
-  <div class="col-md-7">
+<div class="row">
+      {{!-- {{!-- <a href="/blog/{{blog.id}}">{{blog.name}}</a> --}}
+  <div class="col-md">
     <p>
-      {{blog.description}}
+      <div class="card-blogs" style="width: 25rem;">
+        {{!-- <img class="card-img-top" src="..." alt="Card image cap"> --}}
+        <div class="card-body" id="card">
+          <h5 class="card-title">{{blog.name}}</h5>
+          <p class="card-text">{{blog.description}}</p>
+          <p class="card-text">Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
+        {{!-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
+        </div>
+      </div>
+    {{!-- {{blog.description}} --}}
     </p>
   </div>
 </div>
