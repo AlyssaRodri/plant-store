@@ -11,7 +11,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.imgur.com/3/upload", requestOptions)
+fetch("https://www.api.imgur.com/3/upload", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
