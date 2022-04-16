@@ -11,30 +11,26 @@
 
  <form class="form new-comment-form"></form>
    <textarea class="form-input" id="comment-desc" name="comment-desc"></textarea>
-   <button class="upload"> Upload a photo! </button>
-   <p>
     <button class="btn btn-primary" >Leave a comment!</button>
    </p>
  </form>
 </div>
 
 
-
-
-  {{#if comment.length}}
-  <div class="col-md-6 comment-list">
-    {{#each comments as |comment|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/comment/{{comment.id}}">{{comment.name}}</a></h4>
+  {{#each comments as |comment| }}
+<div class="row">
+  <div class="col-md">
+    <p>
+      <div class="card-comments" style="width: 25rem;">
+        {{!-- <img class="card-img-top" src="..." alt="Card image cap"> --}}
+        <div class="card-body" id="card">
+          <p class="card-text">{{comment.text}}</p>
+          <p class="card-text">Created by {{comment.user.name}} on {{format_date comment.date_created}}</p>
+        </div>
       </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{comment.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
+    </p>
   </div>
-  {{/if}}
 </div>
+{{/each}}
 
 <script src="js/profile.js"></script>

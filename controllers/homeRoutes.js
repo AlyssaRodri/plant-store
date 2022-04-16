@@ -51,6 +51,28 @@ router.get('/blog/:id', async (req, res) => {
   }
 });
 
+router.get('/comment/:id', async (req, res) => {
+  try {
+    const commentData = await Comment.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });
+
+    const comment = commentData.get({ plain: true });
+
+    res.render('blog', {
+      ...comment,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
   try {
@@ -79,6 +101,31 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
+});
+
+router.get('/', async (req, res) => {
+  try {
+    // Get all projects and JOIN with user data
+    const commentData = await Comment.findAll({
+       include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });
+
+    // Serialize data so the template can read it
+    const comments = commentData.map((comment) => comment.get({ plain: true }));
+
+    // Pass serialized data and session flag into template
+    res.render('blog', { 
+      comments, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;
