@@ -16,9 +16,14 @@ blogposts. --}}
           <p class="card-text">Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
         {{!-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
         </div>
+        <div>
+          <h4>Media Library</h4>
+          <script src="https://media-library.cloudinary.com/global/all.js"></script>
+        </div>
       </div>
     {{!-- {{blog.description}} --}}
     </p>
   </div>
 </div>
+<script src="../public/js/media-library.js"></script>
 {{/each}}
