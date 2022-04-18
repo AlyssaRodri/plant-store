@@ -1,7 +1,11 @@
 {{!-- When you log in you should be able to see whatever you have saved. We need a clickable area to see the previous
 blogposts. --}}
 
-
+<div class="col-md">
+  <h4>Media Library</h4>
+  <button id="open-btn" class="cloudinary-button">View Our Library!</button>
+  <script src="https://media-library.cloudinary.com/global/all.js"></script>
+</div>
 <!-- Loop over each object in the blogs array -->
 {{#each blogs as |blog| }}
 <div class="row">
