@@ -47,10 +47,22 @@ h1 a {
 }
 
 
-#card {
-    margin: 5px;
-    background-color: #fff;
+.blogcards{
+    flex-direction: column;
+    margin-bottom: 10px;
+    display: inline-block;
+    align-content: center;
+}
 
+#card{
+    background-color: #fff;
+    display: inline-block;
+    align-content: center;
+}
+
+.row{
+    display: inline-block;
+    align-content: center;
 }
 
 /* -----------------login css------------------ */
@@ -83,6 +95,7 @@ h1 a {
 }
 
 .card {
+
     width: 20rem;
     height: 50vh;
     background-color: #4c956c;
