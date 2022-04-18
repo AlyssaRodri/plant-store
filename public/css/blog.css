@@ -1,0 +1,25 @@
+#blogbody{
+    font-size: x-large;
+    background-color: rgba(6, 6, 6, 0.382);
+    color: white;
+    align-content: center;
+    display: flex;
+    width: 75%;
+}
+
+.blog-title{
+    background-color: white;
+    color: black;
+}
+.text-center{
+    align-items: center;
+}
+
+.blogcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+i{
+    background-color: transparent;
+}
