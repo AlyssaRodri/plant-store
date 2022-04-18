@@ -8,6 +8,10 @@
     margin: 0;
     font-family: sans-serif;
     color: #333;
+    background-image: url(../images/profile-bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
   }
   
   a {
