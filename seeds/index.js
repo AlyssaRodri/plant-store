@@ -1,44 +1,44 @@
-const seedUsers = require('./user-seeds');
-const seedPosts = require('./post-seeds');
-const seedComments = require('./comment-seeds');
+// const seedUsers = require('./user-seeds');
+// const seedPosts = require('./post-seeds');
+// const seedComments = require('./comment-seeds');
 
-const sequelize = require('../config/connection');
+// const sequelize = require('../config/connection');
 
-const seedAll = async() => {
-    await sequelize.sync({ force: true });
-    await seedUsers();
-    await seedPosts();
-    await seedComments();
-    process.exit(0);
-};
+// const seedAll = async() => {
+//     await sequelize.sync({ force: true });
+//     await seedUsers();
+//     await seedPosts();
+//     await seedComments();
+//     process.exit(0);
+// };
 
-seedAll();
-
-
-
-// -------------------------------------
+// seedAll();
 
 
-const seedPosts = require("./post-seeds");
-const seedUsers = require("./user-seeds");
-const seedComments = require("./comment-seeds");
 
-const sequelize = require("../config/connection");
+// // -------------------------------------
 
-const seedAll = async () => {
-  await sequelize.sync({ force: true });
-  console.log("\n----- DATABASE SYNCED -----\n");
 
-  await seedUsers();
-  console.log("\n----- USERS SEEDED -----\n");
+// const seedPosts = require("./post-seeds");
+// const seedUsers = require("./user-seeds");
+// const seedComments = require("./comment-seeds");
 
-  await seedPosts();
-  console.log("\n----- POSTS SEEDED -----\n");
+// const sequelize = require("../config/connection");
 
-  await seedComments();
-  console.log("\n----- COMMENTS SEEDED -----\n");
+// const seedAll = async () => {
+//   await sequelize.sync({ force: true });
+//   console.log("\n----- DATABASE SYNCED -----\n");
 
-  process.exit(0);
-};
+//   await seedUsers();
+//   console.log("\n----- USERS SEEDED -----\n");
 
-seedAll();
+//   await seedPosts();
+//   console.log("\n----- POSTS SEEDED -----\n");
+
+//   await seedComments();
+//   console.log("\n----- COMMENTS SEEDED -----\n");
+
+//   process.exit(0);
+// };
+
+// seedAll();

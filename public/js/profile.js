@@ -38,6 +38,61 @@ const delButtonHandler = async (event) => {
 };
 
 
+<<<<<<< HEAD
+// window.onload = function showUploadWidget() {
+//   cloudinary.openUploadWidget({
+//     cloudName: "plantblog",
+//     uploadPreset: "unsigned",
+//     sources: [
+//       "local",
+//       "url",
+//       "camera",
+//       "image_search",
+//       "google_drive",
+//       "facebook",
+//       "dropbox",
+//       "instagram",
+//       "shutterstock",
+//       "getty",
+//       "istock",
+//       "unsplash"
+//     ],
+//     googleApiKey: "<image_search_google_api_key>",
+//     showAdvancedOptions: true,
+//     cropping: true,
+//     multiple: false,
+//     defaultSource: "local",
+//     styles: {
+//       palette: {
+//         window: "#3DAD41",
+//         windowBorder: "#58CC23",
+//         tabIcon: "#32FF00",
+//         menuIcons: "#060606",
+//         textDark: "#000000",
+//         textLight: "#FFFFFF",
+//         link: "#3DAD41",
+//         action: "#060606",
+//         inactiveTabIcon: "#060606",
+//         error: "#F44235",
+//         inProgress: "#8FEC73",
+//         complete: "#20B832",
+//         sourceBg: "#83FFAA"
+//       },
+//       fonts: {
+//         default: null,
+//         "'Space Mono', monospace": {
+//           url: "https://fonts.googleapis.com/css?family=Space+Mono", active: true
+//         }
+//       }
+//     }
+//   },
+//     (err, info) => {
+//       if (!err) {
+//         console.log("Upload Widget event - ", info);
+//       }
+//     })
+// }
+=======
 function showUploadWidget() {
   cloudinary.openUploadWidget({
     cloudName: "plantblog",
@@ -90,6 +145,7 @@ function showUploadWidget() {
     })
     
 }
+>>>>>>> 7ae4f48cf2c78ce6fb950cc7f3f500dd51a2ce33
 
 var myWidget = cloudinary.createUploadWidget({
   cloudName: 'plantblog', 

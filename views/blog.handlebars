@@ -1,15 +1,25 @@
 <div class="text-center ">
+<<<<<<< HEAD
+
+  <p>{{text}}</p>
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  <button class="upload"> Upload a photo! </button>
+
+  <div class="form-group">
+    <label for="project-desc">Text:</label>
+    <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+  </div>
+
+=======
   <h2>{{name}}</h2>
   <p>{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
+>>>>>>> 7ae4f48cf2c78ce6fb950cc7f3f500dd51a2ce33
   <p>
-    <button class="btn btn-primary" >Leave a comment!</button>
+    <button class="btn btn-primary" id="comment">Leave a comment!</button>
   </p>
 
-  
 </div>
-</form>
 
 
-
-
+<script src="/js/comment.js"></script>
