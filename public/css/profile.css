@@ -6,7 +6,7 @@ body {
 }
 
 .new-one {
-    background-color: palegreen;
+    background-color: #98fb98;
     background-color: rgba(6, 6, 6, 0.382);
     color: white;
 
@@ -47,10 +47,25 @@ h1 a {
 }
 
 
-#card {
-    margin: 5px;
-    background-color: #fff;
+.blogcards{
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    float:none;
+    margin-bottom: 10px;
+    
+}
 
+#card {
+    background-color: #fff;
+    display: inline-block;
+    align-content: center;
+}
+
+.row{
+    display: inline-block;
+    align-content: center;
+    margin-right: 1%;
 }
 
 /* -----------------login css------------------ */
@@ -83,6 +98,7 @@ h1 a {
 }
 
 .card {
+
     width: 20rem;
     height: 50vh;
     background-color: #4c956c;
