@@ -14,12 +14,12 @@ const commentData = [
     {
         user_id: 1,
         post_id: 4,
-        comment_text: "Awesome! kudos to everyone who have contributed"
+        comment_text: "Awesome! kudos to everyone who help grow this"
     },
     {
         user_id: 3,
         post_id: 5,
-        comment_text: "We just reached a million subscribers! Fantastic!"
+        comment_text: "We just reached a hundred plants!"
     },
     {
         user_id: 3,
@@ -29,12 +29,12 @@ const commentData = [
     {
         user_id: 3,
         post_id: 4,
-        comment_text: "This is one of our biggest and the most awaited feature. Keep up the good work!"
+        comment_text: "This is one of our biggest and the most awaited plants!"
     },
     {
         user_id: 5,
         post_id: 3,
-        comment_text: "Very useful tool!"
+        comment_text: "Very useful tool for gardening !"
     },
     {
         user_id: 2,
