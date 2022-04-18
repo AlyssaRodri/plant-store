@@ -9,19 +9,21 @@ blogposts. --}}
 </div>
 
 
-{{#each blogs as |blog| }}
-<div class="d-flex justify-content-center">
-  <div class="row">
-    <div class="col-sm-4">
+
+<div class="d-flex justify-content-center blog-container">
+  {{!-- <div class="row">
+    <div class="col-sm-4"> --}}
       <div class="card-blogs" style="width: 25rem;">
-        <div class="card-body" id="card">
-          <h5 class="card-title">
-            <h4><a href="/blog/{{blog.id}}">{{blog.name}}</a></h4>
-          </h5>
-          <p class="card-text">{{blog.description}}</p>
-          <p class="card-text">Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
-        </div>
-      </div>
-    </div>
+        {{#each blogs as |blog| }}
+          <div class="card-body" id="card">
+            <h5 class="card-title">
+              <h4><a href="/blog/{{blog.id}}">{{blog.name}}</a></h4>
+            </h5>
+            <p class="card-text">{{blog.description}}</p>
+            <p class="card-text">Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
+          </div>
+        {{/each}}
+      {{!-- </div>
+    </div> --}}
   </div>
-  {{/each}}
+  
