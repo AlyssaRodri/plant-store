@@ -10,6 +10,7 @@
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
+<<<<<<< HEAD
   <div class="wrapper">
     <header>
         <h1 class="has-text-black px-3 py-3 has-text-weight-bold">Aloe-hi</h1>
@@ -24,6 +25,23 @@
             <a href="/login" class="button is-success">Login</a>
             {{/if}}
         </nav>
+=======
+<body>
+  <div class="flex-column justify-space-around">
+    <header class="display-flex justify-space-between align-center p-2">
+      <h1>
+        <a href="/">Aloe-ha!</a>
+      </h1>
+      <nav>
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <a href="/profile">Dashboard</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+      </nav>
+>>>>>>> main
     </header>
 
     <main>
