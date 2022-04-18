@@ -1,8 +1,8 @@
 <div container class="blogcontainer">
-  <div class="card blogcard ">
+  <div class="card" id="blogbody">
     <div class="text-center">
-      <h1>{{name}}</h1>
-      <p class="blogbody">{{description}}</p>
+      <h1 class="blog-title">{{name}}<i class="fa fa-thin fa-seedling"></i></h1>
+      <p class="blog-text">{{description}}</p>
       <p>Created by {{user.name}} on {{format_date date_created}}</p>
       <p>
         <button class="btn btn-primary" id="comment">Leave a comment!</button>
