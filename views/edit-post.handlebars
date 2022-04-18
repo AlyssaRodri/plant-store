@@ -1,0 +1,43 @@
+{{!-- <div class="text-center ">
+  <h2>{{name}}</h2>
+  <p>{{description}}</p>
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  <p>
+    <button class="btn btn-primary" id="comment">Leave a comment!</button>
+  </p>
+
+</div>
+ <div class="form-group">
+    <label for="project-desc">Text:</label>
+    <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+  </div>
+
+<script src="/js/comment.js"></script> --}}
+
+<article>
+  <a href="/dashboard" class="is-pulled-right"> &larr; back to dashboard</a>
+  <h2 class="title mt-5">edit post</h2><hr>
+  <form class="edit-post-form">
+    <div>
+        <label for="post-title">post title:</label>
+      <input class="input" name="post-title" type="text" value="{{post.title}}" />
+    </div>
+    <div>
+        <label for="post-content">post content:</label>
+      <input class="textarea" name="post-content" type="text" value="{{post.post_content}}" />
+    </div>
+    <div class="is-pulled-right">
+       created by you on {{format_date post.created_at}}
+      |
+      <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+    </div>
+    <button type="submit" class="button is-success">save post</button>
+    <button type="button" class="button is-danger delete-post-btn">delete post</button>
+  </form>
+</article>
+
+{{> comments post.comments}}
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/comment.js"></script>

@@ -2,28 +2,20 @@
 blogposts. --}}
 
 
-<div class="col-md">
+{{!-- <div class="col-md">
   <h4>Media Library</h4>
   <button id="open-btn" class="cloudinary-button">View Our Library!</button>
   <script src="https://media-library.cloudinary.com/global/all.js"></script>
-</div>
-
-
+</div> --}}
 
 <div class="d-flex justify-content-center blog-container">
-  {{!-- <div class="row">
-    <div class="col-sm-4"> --}}
-      <div class="card-blogs" style="width: 25rem;">
-        {{#each blogs as |blog| }}
-          <div class="card-body" id="card">
-            <h5 class="card-title">
-              <h4><a href="/blog/{{blog.id}}">{{blog.name}}</a></h4>
-            </h5>
-            <p class="card-text">{{blog.description}}</p>
-            <p class="card-text">Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
-          </div>
-        {{/each}}
-      {{!-- </div>
-    </div> --}}
-  </div>
-  
+
+
+  {{#each posts as |post|}}
+
+  {{> post-info post }}
+</div>
+
+{{else}}
+  <h6 class="pb-4 has-text-centered is-italic">No posts have been made!!!</h6>
+{{/each}}
