@@ -43,4 +43,4 @@ Comment.init(
   }
 );
 
-module.exports = testingHeroku;
+module.exports = Comment;
