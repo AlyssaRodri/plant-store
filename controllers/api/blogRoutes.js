@@ -1,6 +1,41 @@
 const router = require('express').Router();
-const { Blog } = require('../../models');
+const { Blog, User, Comment} = require('../../models');
+const sequelize = require('../../config/connection');
 const withAuth = require('../../utils/auth');
+
+router.get('/', (req, res) => {
+  console.log('======================');
+  Blog.findAll({
+      attributes: [
+          'id',
+          'name',
+          'description',
+          'date_created'
+      ],
+    order: [['date_created']],
+    include: [
+      // Comment model here -- attached username to comment
+      {
+        model: Comment,
+        attributes: ['id', 'text', 'blog_id', 'user_id', 'date_created'],
+        include: {
+          model: User,
+          attributes: ['name', 'email']
+        }
+      },
+      {
+        model: User,
+        attributes: ['name', 'email']
+      },
+    ]
+  })
+    .then(dbBlogData => res.json(dbBlogData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
 
 router.post('/', withAuth, async (req, res) => {
   try {
