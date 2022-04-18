@@ -38,7 +38,7 @@ const delButtonHandler = async (event) => {
 };
 
 
-window.onload = function showUploadWidget() {
+function showUploadWidget() {
   cloudinary.openUploadWidget({
     cloudName: "plantblog",
     uploadPreset: "unsigned",
@@ -46,7 +46,6 @@ window.onload = function showUploadWidget() {
       "local",
       "url",
       "camera",
-      "image_search",
       "google_drive",
       "facebook",
       "dropbox",
@@ -56,7 +55,6 @@ window.onload = function showUploadWidget() {
       "istock",
       "unsplash"
     ],
-    googleApiKey: "<image_search_google_api_key>",
     showAdvancedOptions: true,
     cropping: true,
     multiple: false,
@@ -90,11 +88,20 @@ window.onload = function showUploadWidget() {
         console.log("Upload Widget event - ", info);
       }
     })
+    
 }
+
+var myWidget = cloudinary.createUploadWidget({
+  cloudName: 'plantblog', 
+  uploadPreset: 'unsigned'}, (error, result) => { 
+    if (!error && result && result.event === "success") { 
+      console.log('Done! Here is the image info: ', result.info); 
+    }
+  }
+)
 
 
 document.getElementById("upload_widget").addEventListener("click", myWidget.open());
-
 
 
 document
