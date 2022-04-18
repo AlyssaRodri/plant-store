@@ -34,8 +34,6 @@ header {
 
 }
 
-
-
 h1 a {
     text-decoration: none;
 }
@@ -159,4 +157,24 @@ h1 a {
     .card {
         width: 75vw;
     }
+}
+
+.blog-container {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-blogs {
+    display: flex;
+    /* flex-direction: column; */
+    min-width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.card-body {
+    width: 30%;
+    min-height: 30%;
+    margin: 1%;
 }
