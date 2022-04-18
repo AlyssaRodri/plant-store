@@ -49,12 +49,14 @@ h1 a {
 
 .blogcards{
     flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    float:none;
     margin-bottom: 10px;
-    display: inline-block;
-    align-content: center;
+    
 }
 
-#card{
+#card {
     background-color: #fff;
     display: inline-block;
     align-content: center;
