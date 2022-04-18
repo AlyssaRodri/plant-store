@@ -6,6 +6,10 @@ User.hasMany(Blog, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
 });
+Blog.hasMany(Comment, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE'
+});
 User.hasMany(Comment, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE'
