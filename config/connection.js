@@ -1,3 +1,4 @@
+// Here we configure our connections so that everything will work with sequelize
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
