@@ -4,7 +4,7 @@ const postData = [
     {
         title: "Aloe Vera",
         post_content: "Hi everybody! I just wanted to take a minute to appreciate my Aloe Vera plant. Commonly used in natural remedies and beauty application, this plant has a jelly like substance growing in the leaves. Does anyone know what kind of soil that I should use?",
-        image_url:"https://res.cloudinary.com/plantblog/image/upload/v1650321242/Lobelia_pru4pm.jpg",
+        image_url:"https://res.cloudinary.com/plantblog/image/upload/v1650409971/aloe-vera-white-pot_sunwand24-ss_edit_t1gngw.jpg",
         user_id: 3
     },
     {
