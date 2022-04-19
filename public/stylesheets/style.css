@@ -249,6 +249,35 @@ footer {
   height: 40px;
 }
 
+body, main{
+  background-image: url(/images/login.jpg);
+}
+.column{
+  background-color: white;
+}
+
+#myposts{
+  background-color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+.mptitle{
+  text-align: center;
+  font-style: italic;
+}
+
+section.container-fluid{
+  background-color: #FFC9B9;
+}
+
+.new-post-form{
+  background-color: #FFC9B9;
+}
+
+footer.footer.rows.pb-2{
+  background-color: #2C6E49;
+}
 
 /* Responsiveness */
 @media screen and (max-width: 767px) {
