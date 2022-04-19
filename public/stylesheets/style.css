@@ -176,7 +176,6 @@ footer {
   justify-content: space-between;
   align-items: baseline; 
   background-color: #2C6E49 ;
-
 }
 
 .navbar-toggler {
@@ -186,7 +185,7 @@ footer {
 .nav {
   text-align: end;
   justify-content: flex-end;
-  width: 60%;
+  width: 30%;
 }
 
 #nav {
@@ -228,13 +227,14 @@ footer {
 /* Homepage styling */
 .blog-container {
   flex-wrap: wrap;
-  /* background-color: #D68C45; */
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
   margin: 5px;
   background-color: #FFC9B9; 
-
 }
 
 .card-header{
@@ -244,7 +244,6 @@ footer {
 /* Create Post Styling */
 .create-btn-container {
   height: 40px;
-  
 }
 
 
@@ -256,6 +255,8 @@ footer {
   .nav-list {
     flex-direction: column;
   }
-
+  .blog-container {
+    width: 80vw;
+  }
   
 } 
