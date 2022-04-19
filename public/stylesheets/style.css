@@ -226,6 +226,14 @@ footer {
   margin: 5px;
 }
 
+/* Create Post Styling */
+.create-btn-container {
+  height: 40px;
+  
+}
+
+
+/* Responsiveness */
 @media screen and (max-width: 767px) {
   .navbar {
     padding-top: 2vh;
