@@ -198,6 +198,11 @@ footer {
   list-style: none;
 }
 
+#navItemHover:hover {
+  background-color: #2c6e49;
+  color: whitesmoke;
+}
+
 .nav-list {
   display: flex;
 }
