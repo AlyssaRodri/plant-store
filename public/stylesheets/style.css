@@ -278,6 +278,10 @@ main {
   background-color: #D68C45;
 }
 
+#postCardHeader {
+  background-color: #D68C45;
+}
+
 /* Create Post Styling */
 .create-btn-container {
   height: 40px;
