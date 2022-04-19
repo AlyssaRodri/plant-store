@@ -257,7 +257,7 @@ body, main{
 }
 
 #myposts{
-  background-color: white;
+  background-color:#FFC9B9;
   text-align: center;
   font-style: italic;
 }
@@ -278,6 +278,12 @@ section.container-fluid{
 footer.footer.rows.pb-2{
   background-color: #2C6E49;
 }
+
+
+
+
+
+
 
 /* Responsiveness */
 @media screen and (max-width: 767px) {
