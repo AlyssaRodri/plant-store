@@ -2,6 +2,83 @@ header, .blog:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
+body {
+  background-image: url(../images/profile-bg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+body {
+  background-image: url(../images/profile-bg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.new-one {
+  background-color: #98fb98;
+  background-color: rgba(6, 6, 6, 0.382);
+  color: white;
+
+}
+
+.jumbotron,
+.container,
+.display-4,
+.lead {
+  background-color: transparent;
+  background-blend-mode: soft-light;
+  text-align: center;
+  font-family: 'Courgette', cursive;
+}
+
+header {
+  font-family: 'Courgette', cursive;
+  text-align: center;
+}
+
+.col-sm {
+  background-color: palegreen;
+  background-color: rgba(143, 236, 115, 0.501);
+  color: white;
+
+}
+
+
+
+h1 a {
+  text-decoration: none;
+}
+
+.new-post {
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  text-align: center;
+}
+
+
+.blogcards{
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  float:none;
+  margin-bottom: 10px;
+  
+}
+
+#card {
+  background-color: #fff;
+  display: inline-block;
+  align-content: center;
+}
+
+.row{
+  display: inline-block;
+  align-content: center;
+  margin-right: 1%;
+}
+
 .no-button {
   background: none;
   border: none;
