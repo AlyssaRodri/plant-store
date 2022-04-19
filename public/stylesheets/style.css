@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  max-width: 100vw;
 }
   
 body, html {
@@ -169,6 +170,7 @@ footer {
 /* Navbar format settings */
 #headerId {
   justify-content: space-between;
+  width: 100%;
 }
 
 .navbar {
@@ -185,6 +187,7 @@ footer {
 .nav {
   text-align: end;
   justify-content: flex-end;
+  padding-right: 5%;
   width: 30%;
 }
 
