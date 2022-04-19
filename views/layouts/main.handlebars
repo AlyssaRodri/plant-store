@@ -16,24 +16,21 @@
 <body>
   <div class="flex-column justify-space-around">
     <header class="navbar navbar-dark navbar-expand-md bg-dark" id="headerId">
-      <li class="nav-item">
-        <h1 class="nav-title">Plant Blog<i class=" fa fa-thin fa-leaf"></i></h1>
+      <li class="nav-item" >
+        <a href="/" class="navbar-item is-hopt-1 nav-link" id="navItemHover">Plant Blog<i class=" fa fa-thin fa-leaf"></i></a>
       </li>
       <ul class="nav">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <nav class="navbar mt-2 collapse navbar-collapse bg-dark  nav-list-container" id="navbarSupportedContent" id="nav">
+        <nav class="navbar mt-2 collapse navbar-collapse bg-dark  nav-list-container" id="navbarSupportedContent">
           {{#if loggedIn}}
             <div class="nav-list">
               <li class="nav-item">
-                <a href="/" class="navbar-item is-hoverable pt-1 nav-link">Homepage</a>
+                <a href="/dashboard" class="navbar-item is-hoverable pt-1 nav-link" id="navItemHover">Dashboard</a>
               </li>
               <li class="nav-item">
-                <a href="/dashboard" class="navbar-item is-hoverable pt-1 nav-link">Dashboard</a>
-              </li>
-              <li class="nav-item">
-                <a href="/dashboard/create/" class="navbar-item is-hoverable pt-1 mr-4 nav-link">Create Post</a>
+                <a href="/dashboard/create/" class="navbar-item is-hoverable pt-1 mr-4 nav-link" id="navItemHover">Create Post</a>
               </li>
               <li class="nav-item">
                 <button id="logout" class="button is-danger">Logout</button>
@@ -42,7 +39,7 @@
             {{else}}
             <div class="nav-list">
               <li class="nav-item">
-                <a href="/" class="navbar-item is-hoverable pt-1 nav-link">Homepage</a>                
+                <a href="/" class="navbar-item is-hoverable pt-1 nav-link" id="navItemHover">Homepage</a>                
               </li>
               <li class="nav-item nav-link">
                 <a href="/login" class="button is-success">Login</a>                
@@ -52,12 +49,6 @@
         </nav>
       </ul>
     </header>
-
-    {{!-- <div>
-      <script src="https://media-library.cloudinary.com/global/all.js"></script>
-      <button id='my_btn'>Click</button>
-      <script src="/javascript/media-cloud.js"></script>
-    </div> --}}
 
     <main>
       {{{ body }}}
