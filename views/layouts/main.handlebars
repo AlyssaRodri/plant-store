@@ -20,17 +20,18 @@
             <a href="/dashboard" class="navbar-item is-hoverable pt-1">Dashboard</a>
             <a href="/dashboard/create/" class="navbar-item is-hoverable pt-1 mr-4">Create Post</a>
             <button id="logout" class="button is-danger">Logout</button>
+  <div>
+    <script src="https://media-library.cloudinary.com/global/all.js"></script>
+    <button id='my_btn'>Click</button>
+    <script src="/javascript/media-cloud.js"></script>
+  </div>
+  
             {{else}}
             <a href="/" class="navbar-item is-hoverable pt-1">Homepage</a>
             <a href="/login" class="button is-success">Login</a>
             {{/if}}
         </nav>
     </header>
-  <div>
-    <script src="https://media-library.cloudinary.com/global/all.js"></script>
-    <button id='my_btn'>Click</button>
-    <script src="/javascript/media-cloud.js"></script>
-  </div>
 
     <main>
             {{{ body }}}

@@ -10,8 +10,9 @@ const mloptions = {
 
 function insertHandler(data){
 console.log(data);
+console.log("trying to see htis")
 }
-
+ 
 window.ml = cloudinary.createMediaLibrary(mloptions, {insertHandler: insertHandler}, "#my_btn")
 
 
