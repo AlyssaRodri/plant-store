@@ -152,6 +152,7 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+  background-color: #4C956C;
 }
 
 .card {
@@ -222,10 +223,17 @@ footer {
 /* Homepage styling */
 .blog-container {
   flex-wrap: wrap;
+  /* background-color: #D68C45; */
 }
 
 .card {
   margin: 5px;
+  background-color: #FFC9B9; 
+
+}
+
+.card-header{
+  background-color: #D68C45;
 }
 
 /* Create Post Styling */
