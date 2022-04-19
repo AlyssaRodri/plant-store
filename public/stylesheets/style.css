@@ -2,26 +2,34 @@
   box-sizing: border-box;
   max-width: 100vw;
 }
-  
-body, html {
+
+body,
+html {
   height: 100%;
   padding: 0;
   margin: 0;
   font-family: sans-serif;
   color: #333;
- 
+
 }
+
+.image {
+  height: 500px;
+  width: 400px;
   
+}
+
+
 a {
   text-decoration: none;
   font-weight: bold;
   color: black;
 }
-  
+
 a:hover {
   color: #06203f;
 }
-  
+
 button {
   border: 0;
   padding: 1%;
@@ -30,36 +38,38 @@ button {
   cursor: pointer;
   border-radius: 5px;
 }
-  
+
 .post-list {
   margin: 0;
   padding: 0;
 }
-  
-textarea, input {
+
+textarea,
+input {
   padding: .5%;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
-  
-textarea:focus, input:focus {
+
+textarea:focus,
+input:focus {
   outline: none;
   border: 1px solid #06203f;
 }
-  
+
 textarea {
   min-width: 40%;
   min-height: 100px;
 }
-  
-form > div {
+
+form>div {
   margin-bottom: 2%;
 }
-  
+
 form label {
   display: block;
 }
-  
+
 .wrapper {
   width: 100%;
   min-height: 100%;
@@ -68,7 +78,7 @@ form label {
   display: flex;
   flex-direction: column;
 }
-  
+
 header {
   border-bottom: 1px solid #ccc;
   display: flex;
@@ -76,12 +86,12 @@ header {
   align-items: center;
   padding: 0 1%;
 }
-  
+
 main {
   flex: 1;
   padding: 2% 4%;
 }
-  
+
 .btn-no-style {
   background: none;
   border: none;
@@ -94,55 +104,55 @@ main {
   transition: color .1s;
   margin-left: 16px;
 }
-  
+
 .btn-no-style:hover {
   background: none;
   color: #06203f;
 }
-  
+
 .delete-post-btn {
   background-color: #620202;
 }
-  
+
 .delete-post-btn:hover {
   background-color: #ab4f36;
 }
-  
+
 .post {
   margin-bottom: 2%;
   line-height: 150%;
 }
-  
+
 .post .title span {
   font-style: italic;
   font-size: 90%;
   color: #7d7d7d;
 }
-  
+
 .edit-link {
   display: block;
   margin: -1.5% 0 2% 0;
 }
-  
+
 .comment-form {
   margin-bottom: 5%;
 }
-  
+
 .comment {
   padding: 1%;
   margin-bottom: 1%;
 }
-  
+
 .comment:nth-child(odd) {
   background-color: #fff5eb;
 }
-  
+
 .comment .meta {
   font-size: 90%;
   margin-bottom: .5%;
   opacity: .6;
 }
-  
+
 .edit-post-form {
   margin-bottom: 5%;
 }
@@ -161,8 +171,8 @@ footer {
   margin-top: 1em;
 }
 
-.rows{
-  display:flex;
+.rows {
+  display: flex;
   flex-direction: column;
 }
 
@@ -222,7 +232,7 @@ ul.nav{
   font-size: x-large;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: gray;
 }
 
@@ -298,6 +308,7 @@ footer.footer.rows.pb-2{
   .navbar {
     padding-top: 2vh;
   }
+
   .nav-list {
     flex-direction: column;
   }
