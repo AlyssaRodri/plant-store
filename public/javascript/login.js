@@ -14,6 +14,8 @@ async function loginFormHandler(event) {
       headers: { 'Content-Type': 'application/json' }
     });
 
+    await response.json()
+
     if (response.ok) {
       document.location.replace('/dashboard');
     } else {
