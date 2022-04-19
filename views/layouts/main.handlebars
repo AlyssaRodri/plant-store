@@ -40,9 +40,6 @@
             </div>
             {{else}}
             <div class="nav-list">
-              <li class="nav-item">
-                <a href="/" class="navbar-item is-hoverable pt-1 nav-link" id="navItemHover">Homepage</a>                
-              </li>
               <li class="nav-item nav-link">
                 <a href="/login" class="button is-success">Login</a>                
               </li>
@@ -56,8 +53,12 @@
       {{{ body }}}
     </main>
 
-    <footer class="footer rows pb-2">
-      <div class="row-is-full content has-text-centered">
+  {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+  {{/if}}
+
+  <footer class="footer rows pb-2">
+      <div class="has-text-centered footer-div">
           <p>
             <a href="/">Homepage</a>
             {{#if loggedIn}} | 
@@ -68,10 +69,6 @@
             {{/if}}
           </p>
       </div>
-      <div class="row-is-full content has-text-centered">
-        <p>
-          <strong>Aloe-ha!</strong> 
-        </p>
       </div>
     </footer>
   </div>
