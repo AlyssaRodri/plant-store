@@ -195,7 +195,15 @@ main {
   width: 100%;
   height: 12vh;
   align-items: baseline;
+
 }
+
+ul.nav{
+  align-content: center;
+  align-items: center;
+
+}
+
 
 .navbar {
   width: 100%;
@@ -292,6 +300,13 @@ body, main{
 }
 .column{
   background-color: white;
+}
+
+
+.mb-5.pt-3{
+  background-color:#FFC9B9;
+  text-align: center;
+  font-style: italic;
 }
 
 #myposts{
