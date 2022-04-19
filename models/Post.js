@@ -14,10 +14,14 @@ Post.init(
         autoIncrement: true
       },
       title: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false
       },
       post_content: {
+        type: DataTypes.TEXT,
+        allowNull: true
+      },
+      image_url:{
         type: DataTypes.TEXT,
         allowNull: true
       },

@@ -3,6 +3,9 @@ async function newFormHandler(event) {
   
     const title = document.querySelector('input[name="post-title"]').value;
     const post_content = document.querySelector('input[name="post-content"]').value;
+
+    const img = document.querySelector("img");
+    const image_url = img.getAttribute("src");
   
     const response = await fetch(`/api/posts`, {
       method: 'POST',
