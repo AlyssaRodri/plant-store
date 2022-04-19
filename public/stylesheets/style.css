@@ -171,7 +171,15 @@ footer {
 #headerId {
   justify-content: space-between;
   width: 100%;
+  align-content: center;
+  align-items: center;
 }
+
+ul.nav{
+  align-content: center;
+  align-items: center;
+}
+
 
 .navbar {
   width: 100%;
