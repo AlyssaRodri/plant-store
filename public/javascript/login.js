@@ -15,7 +15,6 @@ async function loginFormHandler(event) {
     });
 
     await response.json()
-    //return console.log(JSONresponse)
 
     if (response.ok) {
       document.location.replace('/dashboard');
