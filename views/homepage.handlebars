@@ -6,11 +6,9 @@ blogposts. --}}
   <h4>Media Library</h4>
   <button id="open-btn" class="cloudinary-button">View Our Library!</button>
   <script src="https://media-library.cloudinary.com/global/all.js"></script>
-<<<<<<< HEAD
 </div> --}}
 
 <div class="d-flex justify-content-center blog-container">
-
 
   {{#each posts as |post|}}
 
@@ -20,22 +18,3 @@ blogposts. --}}
 {{else}}
   <h6 class="pb-4 has-text-centered is-italic">No posts have been made!!!</h6>
 {{/each}}
-</div>
-
-
-{{#each blogs as |blog| }}
-<div class="d-flex justify-content-center">
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="card-blogs" style="width: 25rem;">
-        <div class="card-body" id="card">
-          <h5 class="card-title">
-            <h4><a href="/blog/{{blog.id}}">{{blog.name}}</a></h4>
-          </h5>
-          <p class="card-text">{{blog.description}}</p>
-          <p class="card-text">Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  {{/each}}

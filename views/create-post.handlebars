@@ -1,59 +1,6 @@
-{{!-- AKA USER DASHBOARD => Other blog posts (past, recents)
-<div class="row">
-  <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
-  </div>
-</div>
 
-<div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Create a New Blog:</h3>
-
-    <form class="form new-blog-form">
-      <div class="form-group">
-        <label for="blog-name">Title:</label>
-        <input class="form-input" type="text" id="blog-name" name="blog-name" />
-      </div>
-      <div class="form-group">
-        <label for="blog-desc">content:</label>
-        <textarea class="form-input" id="blog-desc" name="blog-desc"></textarea>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-      <button id="upload_widget" class="cloudinary-button">Upload files</button>
-      <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script> 
-      </div>
-    </form>
-  </div>
-
-  {{#if blogs.length}}
-  <div class="col-md-6 blog-list">
-    <h3>Current blogs:</h3>
-
-    {{#each blogs as |blog|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/blog/{{blog.id}}">{{blog.name}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
-  </div>
-  {{/if}}
-</div>
-
-<div class="col-md">
-  <h4>Media Library</h4>
-  <button id="open-btn" class="cloudinary-button">View Our Library!</button>
-  <script src="https://media-library.cloudinary.com/global/all.js"></script>
-</div>
-
-<script src="js/profile.js"></script> --}}
-
-<section>
-    <a href="/dashboard" class="is-pulled-right"> &larr; back to dashboard</a>
+<section class="container-fluid">
+    <a href="/dashboard" > &larr; back to dashboard</a>
   <h2 class="title">create new blog post</h2><hr>
 
   <form class="new-post-form">
@@ -61,12 +8,22 @@
       <label for="post-title">title:</label>
       <input class="input" type="text" id="post-title" name="post-title" placeholder="insert blog title here"/>
     </div>
+    <div id="image-here"></div>
     <div>
       <label for="post-content">content:</label>
       <input class="textarea is-large" id="post-content" name="post-content" placeholder="insert blog content here"/>
     </div>
-    <button type="submit" class="button is-primary is-pulled-right">create post</button>
+    <div class="create-btn-container">
+      <button type="submit" class="button is-primary  create-btn">create post</button>
+    </div>
   </form>
+
+ <div>
+    <script src="https://media-library.cloudinary.com/global/all.js"></script>
+    <button id='my_btn'>Click</button>
+    <script src="/javascript/media-cloud.js"></script>
+  </div>
+
 </section>
 
 <script src="/javascript/add-post.js"></script>
