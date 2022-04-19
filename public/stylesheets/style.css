@@ -225,6 +225,7 @@ footer {
 .card {
   margin: 5px;
 }
+
 @media screen and (max-width: 767px) {
   .navbar {
     padding-top: 2vh;
