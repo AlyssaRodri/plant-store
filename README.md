@@ -1,6 +1,6 @@
 # Aloe-ha Project 2
 
-In this project, we created a blog space for the avid gardner. At Aloe-ha, people can post images, create blog posts, and comment to help each other.
+In this project, we created a blog space for the avid gardner. At Aloe-ha, people can post images, create blog posts, and comment to help each other with all questions relating to plants.
 
 
 ## Table of Contents
@@ -34,9 +34,20 @@ In this project, we created a blog space for the avid gardner. At Aloe-ha, peopl
 16. Only one repo needs to be managed per group.
 
 ### Installation
-
+1. Clone down the repo onto your local machine.
+2. Open your integrated terminal.
+3. Run "npm init"
+4. Run "npm install"
+5. Create an account on the website.
+6. Sign in and try it out!
 
 ### Our Website
+
+Please visit our website here: [https://agile-atoll-06958.herokuapp.com/](https://agile-atoll-06958.herokuapp.com/)
+
+This is the image your should be expecting of our homepage. ![Homepage](./public/images/main-homepage.png)
+Here is an image of a populated dashboard. This will happen for the user only after they create their blogs. ![Populated Dashboard](./public/images/dashboard.png)
+Lastly, this is what the create page will look like. ![Create Blog](./public/images/create-blog-page.png)
 
 ### Authors
 - Alejandro Salazar
@@ -46,3 +57,4 @@ In this project, we created a blog space for the avid gardner. At Aloe-ha, peopl
 - Matt Jackson
 
 ### Questions
+If you have any questions, please feel free to reach out to use at alyssarodr.develop@yahoo.com or visit any of our GitHub pages.
